@@ -163,7 +163,7 @@
   header.masthead {
     text-align: right;
     color: 		rgba(31, 109, 134, 0.349);
-    background-image: url("main2.jpg");
+    background-image: url("main2-min.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -244,6 +244,7 @@
     border-radius: 50%;
     margin-left: 90px;
     margin-top: 50px;
+    background-image: url("profile.jpg");
     }
 
     .image-circle {
