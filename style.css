@@ -163,7 +163,7 @@
   header.masthead {
     text-align: right;
     color: 		rgba(31, 109, 134, 0.349);
-    background-image: url("main2.jpg");
+    background-image: url("main2-min.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -240,6 +240,7 @@
     width: 300px;
     height: 300px;
     /* position: relative; */
+    background-image: url("profile.jpg");
     overflow: hidden;
     border-radius: 50%;
     margin-left: 90px;
