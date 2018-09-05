@@ -28,6 +28,10 @@
     font-weight: 700;
     font-family: 'Syncopate', sans-serif, bold;
   }
+
+  h4 {
+    margin-bottom: 40px;
+  }
   
   section {
     padding: 100px 0;
@@ -104,7 +108,34 @@
     color: white;
     border: 0;
     background-color: #8CACB7;
+    /* font-family: 'Open Sans', sans-serif; */
+  }
+
+  #mainNav .navbar-toggler .dropdown-menu {
+    /* font-size: 12px; */
+    /* text-align: center; */
+    /* text-transform: uppercase; */
+    margin: auto 0;
+    color: rgba(255, 255, 255, 0.767);
+    border: 0;
+    width: 100%;
+    background-color: rgba(24, 189, 73, 0.493);
+    /* font-family: 'Open Sans', sans-serif; */
+  }
+  #mainNav .navbar-toggler .dropdown-item {
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border: 0;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
+  }
+
+  #mainNav .navbar-toggler .dropdown-item:hover {
+    color: rgb(255, 255, 255);
+    background-color:rgba(31, 109, 134, 0.349);
   }
   
   #mainNav .navbar-brand {
@@ -307,7 +338,7 @@
   #portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0 auto;
     cursor: pointer;
   }
@@ -338,6 +369,13 @@
     color: white;
   }
   
+  #portfolio .demoVideo {
+    margin: auto;
+  }
+  #portfolio .remixlogo {
+    margin: auto;
+  }
+
   #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
   }
@@ -351,11 +389,12 @@
   }
 
   #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0 auto;
     padding: 25px;
     text-align: center;
     background-color: #fff;
+    margin-top: 30px;
   }
   
   #portfolio .portfolio-item .portfolio-caption h4 {
@@ -502,6 +541,7 @@
   
   #otherprojects .portfolio-item .portfolio-caption h4 {
     margin: 0;
+    margin-bottom: 20px;
     text-transform: none;
     color: rgba(24, 189, 73, 0.911);
   }

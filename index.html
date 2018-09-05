@@ -11,7 +11,8 @@
     <title>HYUN JOO NAM</title>
     <link rel="icon" type="image/png" href="girlcoder.png" hreflang="en-us">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <!-- Custom fonts for this template -->
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet" type="text/css">
@@ -33,9 +34,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">HN</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#about">About</a>
+            <a class="dropdown-item" href="#portfolio">Featured Project</a>
+            <a class="dropdown-item" href="#skills">Skills</a>
+            <a class="dropdown-item" href="#otherprojects">Other Projects</a>
+            <a class="dropdown-item" href="#contact">Contact</a>
+          </div>
+          
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
@@ -43,7 +50,7 @@
                 <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Featured Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
@@ -65,7 +72,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">HELLO !  </div>
           <span class="intro-heading text-uppercase">I'm <span class="intro-heading-name text-uppercase">Hyun Joo Nam</span>,</span>
-          <div class="intro-heading text-uppercase">a full stack developer </div>
+          <div class="intro-heading text-uppercase">a software engineer </div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -88,10 +95,10 @@
             </div>
             <div class="col-lg-6">
                 <div class="mybackground">
-                        Hello! My name is Hyun Joo Nam. I'm a full stack developer living in Atlanta, GA. <br><br>
+                        Hello! My name is Hyun Joo Nam. I'm a software engineer living in Atlanta, GA. <br><br>
                         I attended the Georgia Institute of Technology for my Bachelor's degree in Biomedical Engineering.
                         Upon graduating, I have worked in technology, medical, and finance industries. I found myself yearning for a new challenge and was passionate about mastering development skills. Thus, I'm currently in DigitalCrafts full-stack web development flex coding boot camp. <br><br>
-                        As a full stack developer, I enjoy solving problems and engaging with projects that require me to work outside my comfort and knowledge set. 
+                        As a software engineer, I enjoy solving problems and engaging with projects that require me to work outside my comfort and knowledge set. 
 
                 </div>
             </div>
@@ -105,11 +112,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2 class="section-heading text-uppercase">Portfolio</h2>
+                  <h2 class="section-heading text-uppercase">Featured Project</h2>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                     <img class="img-fluid" src="trivialbots.png" alt="">
 
                   <div class="portfolio-caption">
@@ -118,18 +125,26 @@
                     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/KathrynParker/trivialbots" target="_blank">Github</a>
                     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://affectionate-carson-95ee95.netlify.com/" target="_blank">Live</a>
                   </div>
-                </div>
-                   <div class="col-md-4 col-sm-6 portfolio-item">
-                    <img class="img-fluid" src="remix.png" alt="">
-
+                </div> -->
+                   <!-- <div class="col-md-4 col-sm-6 portfolio-item"> -->
+                    <!-- <img class="img-fluid" src="remix.png" alt=""> -->
+               
+                      <img class="remixlogo" src="https://i.imgur.com/K6vfKgi.png" width="250" alt="remixlogo">
+              </div>
+              <div class="row">
+                    <iframe class="demoVideo" width="630" height="394" src="https://www.youtube.com/embed/qQh5HoZ5ry0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                    
+                <div class="portfolio-item">
                     <div class="portfolio-caption">
-                    <h4>REMIX</h4>
-                    <p>REMIX is a fantastic way to share combined or edited existing image in Remix gallery, get you inspired, and keep up with creativity!</p>
+                    <p>REMIX is a fantastic way to get you inspired and keep up with creativity! It allows you to share edited or REMIXed image by uploading image url to the gallery. Once you login, you will see your own REMIX history as well.</p>
+                    <p>It is built with React in order to manage this application’s navigation and Axios for connections to APIs. It's backend is served as an API for front end and has Heroku database table to store your data.
+            
+                    </p> <p>Please Watch the video above for a walkthrough to see all other features including register/login, email communication from the server to a user, etc.</p>
                     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/csills/REMIX" target="_blank">Github</a>
                     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://dc-remix.herokuapp.com/" target="_blank">Live</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+              </div>
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                         <img class="img-fluid" src="sceneittoo.png" alt="">
     
                       <div class="portfolio-caption">
@@ -138,7 +153,7 @@
                         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/sceneittoo" target="_blank">Github</a>
                         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://sceneittoo.herokuapp.com/" target="_blank">Live</a>
                       </div>
-                </div>
+                </div> -->
              
               </div>
             </div>
@@ -188,63 +203,32 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
-            <div class="portfolio-item">
-                <div class="portfolio-caption">
-                    <h4>Memory Game</h4>
-                    <p>Match all the cards in as few flips as possible</p>
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/Memory-Game_Part1" target="_blank">Github</a>
-                  </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
+          <div class="col text-center">
               <div class="portfolio-item">
                   <div class="portfolio-caption">
-                      <h4>Scene It</h4>
-                      <p>A simple tool for searching for movies</p>
-                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/scene-it-starter" target="_blank">Github</a>
-                    </div>
+                      <h4>Trivialbots</h4>
+                      <img class="img-fluid" src="trivialbots.png" alt="">
+
+                
+                      <p>TrivialBOTS is single player trivia game. When you have answered a question successfully, you will generate a random robot.</p>
+                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/KathrynParker/trivialbots" target="_blank">Github</a>
+                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://affectionate-carson-95ee95.netlify.com/" target="_blank">Live</a>
+                  </div>
+               </div>
               </div>
-            </div>
-            <div class="col-sm-4">
+            <div class="col text-center">
                 <div class="portfolio-item">
                     <div class="portfolio-caption">
-                        <h4>Coffee Run</h4>
-                        <p>The interface for accepting coffee orders from users</p>
-                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/coffeerun-starter" target="_blank">Github</a>
+                      <h4>Scene It Too?</h4>
+                        <img class="img-fluid" src="sceneittoo.png" alt="">
+                        <p>Scene It Too? allows you to search for movies from API and then save them to your "Scene It" list and your "Ain't Scene It" list.</p>
+                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/sceneittoo" target="_blank">Github</a>
+                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://sceneittoo.herokuapp.com/" target="_blank">Live</a>
                       </div>
                 </div>
+                </div>
+
               </div>
-              <div class="col-sm-4">
-                  <div class="portfolio-item">
-                      <div class="portfolio-caption">
-                          <h4>Friendship App</h4>
-                          <p>Fill out the form to request to be your friend</p>
-                          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/friendshipapplicationform" target="_blank">Github</a>
-                        </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="portfolio-item">
-                        <div class="portfolio-caption">
-                            <h4>DC Interest</h4>
-                            <p>Recreate the design which is inspired by Pinterest</p>
-                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/DCinterest" target="_blank">Github</a>
-                          </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-4">
-                      <div class="portfolio-item">
-                          <div class="portfolio-caption">
-                              <h4>Pixel Art</h4>
-                              <p>Guess who this guy is! Hint: Italian plumber</p>
-                              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/hyunjoonam/Mario" target="_blank">Github</a>
-                            </div>
-                      </div>
-                    </div>
-
       </div>
     </section>
 
